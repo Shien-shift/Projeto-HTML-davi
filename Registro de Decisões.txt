@@ -1,0 +1,69 @@
+Registros de Decisões HTML/CSS parte 1
+
+principais mudanças:
+
+1- ajuste da grade envolvendo os cards da home (auto-fix + min/max)
+-ajuste íntrinseca-
+
+"porque?"
+
+O que muda é a quantidade de colunas, e ela deve seguir o espaço disponível. Sem breakpoint.
+
+largura que falhou/mudou:
+
+Não tem ponto fixo: medi 1 coluna em 320px, 2 em 600px, 2 em 900px e 3 em 1200px 
+(os valores de 640px a 900px variam por causa da barra lateral).
+
+---------
+
+2- cabeçalho empilhador por linha
+-ajuste deliberado-
+
+"porque?"
+
+Muda a dinamica do desenho 
+(título e menu passam de um embaixo do outro para lado a lado)
+
+largura que falhou/mudou:
+
+Título (148px) + menu (248px) + margens só cabem em uma linha a partir de 470px e 36rem (576px)
+
+---------
+
+3- faixa lateral no topo em uma coluna 220x
+-ajuste deliberado-
+
+"porque?"
+
+Muda o desenho tambem, uma coluna fixa ao lado só faz sentido se sobrar espaço para o conteúdo
+
+largura que falhou/mudou:
+
+220px + 1 card (16rem) + margens 540px. Adotei 36rem.
+
+----------
+
+4- Margens e espaçamentos (main, section, cards) menores no celular
+-ajuste íntrinseca-
+
+"porque?"
+
+O espaço lateral grande (2rem, 40px) consome a tela pequena. Ele cresce só em telas maiores.
+
+largura que falhou/mudou:
+
+Mudança em 36rem (mesmo breakpoint, para não criar um número novo sem motivo).
+
+-----------
+
+5- Menu com flex-wrap (home e detalhe)
+- ajuste íntrinseca-
+
+"porque?" 
+
+Os itens quebram de linha sozinhos quando não cabem, sem regra por tela.
+
+largura que falhou/mudou:
+
+Home: 4 itens cabem em uma linha até 320px. 
+Detalhe: 7 itens ocupam 2 a 3 linhas no celular.
