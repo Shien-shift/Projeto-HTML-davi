@@ -1,0 +1,43 @@
+Registros de Decisões HTML/CSS parte 2
+
+tipografia: 
+
+Títulos com clamp() que interpolam entre 360px e 1280px
+Página do local: 20 px > 33,6 px
+Vitrine: 24 px > 40 px
+Nos extremos o valor bate com o mínimo e o máximo, e entre eles 
+cresce sem saltos
+Também alterei as cores pois estava doendo meus olhos.
+
+Mídia:
+
+Regra global max-width: 100%; height: auto para qualquer imagem futura
+Na figura do local: aspect-ratio: 3/2 e object-fit: cover, para manter 
+a proporção sem distorcer
+Ao redimensionar, pareceu bem mais aceitável.
+
+Usuario:
+
+Toque: links com min-height > 44px
+Foco: focus-visible com anel branco e contorno azul-escuro 
+visível em qualquer fundo
+os dedos acertaram os links corretamente.
+
+Auditoria:
+
+Notas do Lighthouse: preencha as de index.html e 
+detalhe.html (meta: ≥ 90)
+Achado: contraste insuficiente 
+(roxo e texto escuro sobre azul e verde-azulado
+link azul no rodapé)
+Correção: texto branco e ciano claro nos fundos escuros
+--cor-azul-escuro nos links do rodapé, tudo por variáveis no :root.
+
+divisão via folha unica ou por pagina:
+
+Folha única resolveu: imagem, clamp, foco, toque, cabeçalho e cores.
+Por página: na home, o reset das <section>, o main sem max-width
+a sidebar e a grade de cartões
+no local, o object-fit da figura.
+
+
